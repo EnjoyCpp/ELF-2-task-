@@ -34,10 +34,10 @@ Usage
 1. Upload the Video
 
 The code uses the Google Colab interface for uploading video files. After running the code, it will prompt you to upload one or more video files.
+
 2. Run Frame Extraction and Processing
 
 Once the video is uploaded, the extract_frames function will:
-
     Extract frames from the video.
     Analyze the quality of each frame (blur and motion).
     Identify "bad frames" and save them in a specified folder.
@@ -49,5 +49,5 @@ Once the video is uploaded, the extract_frames function will:
     A directory will be created with clustered frames based on their quality.
     The code will also generate a scatter plot visualizing the clustering results based on the blur and motion scores.
 
-    
+
 
