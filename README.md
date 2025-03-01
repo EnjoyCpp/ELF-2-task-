@@ -30,24 +30,27 @@ You can install all the required packages by running the following command:
 pip install opencv-python numpy matplotlib scikit-learn tqdm
 ```
 
-Usage
-1. Upload the Video
+# Usage
+## 1. Upload the Video
 
 The code uses the Google Colab interface for uploading video files. After running the code, it will prompt you to upload one or more video files.
 
-2. Run Frame Extraction and Processing
+## 2. Run Frame Extraction and Processing
 
-Once the video is uploaded, the extract_frames function will:
-    Extract frames from the video.
-    Analyze the quality of each frame (blur and motion).
-    Identify "bad frames" and save them in a specified folder.
-    Cluster the frames based on their quality scores and save the clustered frames in separate folders.
+Once the video is uploaded, the `extract_frames` function will:
 
-3. View Results
+- Extract frames from the uploaded video.
+- Analyze the quality of each frame by calculating the blur and motion scores.
+- Identify "bad frames" with high blur or motion scores.
+- Save the "bad frames" in a specified folder (`bad_frames`).
+- Cluster the frames based on their blur and motion scores.
+- Save the clustered frames into separate folders under the `clusters` directory.
 
-    A CSV file will be generated with the results of the analysis for the bad frames.
-    A directory will be created with clustered frames based on their quality.
-    The code will also generate a scatter plot visualizing the clustering results based on the blur and motion scores.
+## 3. View Results:
+
+ - A CSV file will be generated with the results of the analysis for the bad frames.
+ - A directory will be created with clustered frames based on their quality.
+ - The code will also generate a scatter plot visualizing the clustering results based on the blur and motion scores.
 
 
 
